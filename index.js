@@ -43,8 +43,8 @@ hexo.extend.filter.register('after_post_render', function(data){
 			  if(srcArray.length > 1)
 				srcArray.shift();
 			  src = srcArray.join('/');
-			  $(this).attr('src', config.root + link + src);
-			  console.info&&console.info("update link as:-->"+config.root + link + src);
+			  $(this).attr('src', config.CDNUrl + link + src);
+			  console.info&&console.info("update link as:-->"+config.CDNUrl + link + src);
 			}
 		}else{
 			console.info&&console.info("no src attr, skipped...");
